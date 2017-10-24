@@ -34,7 +34,7 @@ function setStatus(context, passing) {
     context.repo({
       ...status,
       sha: context.payload.pull_request.head.sha,
-      context: 'pr_title',
+      context: 'probot/pr-title',
     }),
   );
 }
