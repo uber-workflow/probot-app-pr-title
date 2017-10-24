@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "compromise": "^10.7.2",
-    "probot": "^0.11.0"
+    "probot": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^4.8.0",

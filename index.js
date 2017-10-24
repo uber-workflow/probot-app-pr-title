@@ -11,6 +11,7 @@ module.exports = robot => {
   robot.on('pull_request.edited', check);
 
   async function check(context) {
+    const pr = context.payload.pull_request;
     const passed = isValidTitle(pr.title);
     setStatus(context, passed);
   }
