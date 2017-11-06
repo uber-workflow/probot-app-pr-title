@@ -45,6 +45,7 @@ const nounWhitelist = new Set([
   'recover',
   'restructure',
   'resolve',
+  'expose',
 ]);
 
 // Validate first word is a capitalized imperative mood verb
