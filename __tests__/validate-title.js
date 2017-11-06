@@ -22,6 +22,19 @@ test('valid commits pass', () => {
     'Delete thing',
     'Revert whatever',
     `Expose "ignore" and "fetch" as instance methods`,
+    'Refactor some arbitrary thing',
+    'Release some arbitrary thing',
+    'Revert some arbitrary thing',
+    'Restore some arbitrary thing',
+    'Recycle some arbitrary thing',
+    'Repeat some arbitrary thing',
+    'Rebuild some arbitrary thing',
+    'Reconcile some arbitrary thing',
+    'Record some arbitrary thing',
+    'Redefine some arbitrary thing',
+    'Recover some arbitrary thing',
+    'Restructure some arbitrary thing',
+    'Resolve some arbitrary thing',
   ];
 
   valid.forEach(msg => {
