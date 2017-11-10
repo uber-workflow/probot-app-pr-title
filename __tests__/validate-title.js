@@ -35,6 +35,7 @@ test('valid commits pass', () => {
     'Recover some arbitrary thing',
     'Restructure some arbitrary thing',
     'Resolve some arbitrary thing',
+    'Upgrade some arbitrary thing',
   ];
 
   valid.forEach(msg => {
