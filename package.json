@@ -1,6 +1,6 @@
 {
   "name": "probot-app-pr-title",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "GitHub App that enforces the format of PR titles/commits",
   "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
   "contributors": [],
