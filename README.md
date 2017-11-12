@@ -18,8 +18,8 @@ npm start
 
 See [docs/deploy.md](docs/deploy.md) if you would like to run your own instance of this app.
 
-[build-badge]: https://travis-ci.org/uber-web/probot-app-pr-title.svg?branch=master
-[build-href]: https://travis-ci.org/uber-web/probot-app-pr-title
+[build-badge]: https://badge.buildkite.com/dafda46de3acff0f75fbf6f4111d8c0cf885700b3c0ef6c6ba.svg?branch=master
+[build-href]: https://buildkite.com/uberopensource/probot-app-pr-title
 [deps-badge]: https://david-dm.org/uber-web/probot-app-pr-title.svg
 [deps-href]: https://david-dm.org/uber-web/probot-app-pr-title
 [npm-badge]: https://badge.fury.io/js/probot-app-pr-title.svg
