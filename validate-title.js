@@ -38,6 +38,7 @@ const nounWhitelist = new Set([
   'record',
   'redefine',
   'recover',
+  'reset',
   'restructure',
   'resolve',
   'expose',
