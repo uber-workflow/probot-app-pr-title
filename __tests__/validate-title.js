@@ -12,6 +12,7 @@ const isValidTitle = require('../validate-title.js');
 
 test('valid commits pass', () => {
   const valid = [
+    'Introduce some arbitrary thing',
     'Update subsystem X for readability',
     'Refactor subsystem X for readability',
     'Update getting started documentation',
@@ -40,7 +41,7 @@ test('valid commits pass', () => {
   ];
 
   valid.forEach(msg => {
-    t.equal(isValidTitle(msg), true);
+    t.equal(isValidTitle(msg), true, `"${msg}", was expected to be valid`);
   });
 });
 
