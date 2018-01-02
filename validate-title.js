@@ -32,6 +32,7 @@ function isValidSentence(parsed) {
 // The following verbs starting with `re` are categorized as singular nouns
 // See: https://github.com/nlp-compromise/compromise/issues/412
 const nounWhitelist = new Set([
+  'implement',
   'introduce',
   'repeat',
   'rebuild',
