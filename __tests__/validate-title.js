@@ -12,6 +12,7 @@ const isValidTitle = require('../validate-title.js');
 
 test('valid commits pass', () => {
   const valid = [
+    'Implement some arbitrary thing',
     'Introduce some arbitrary thing',
     'Update subsystem X for readability',
     'Refactor subsystem X for readability',
