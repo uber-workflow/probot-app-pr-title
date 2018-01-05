@@ -8,7 +8,7 @@
 
 const t = require('assert');
 
-const isValidTitle = require('../validate-title.js');
+const validateTitle = require('../validate-title.js');
 
 test('valid commits pass', () => {
   const valid = [
@@ -42,7 +42,7 @@ test('valid commits pass', () => {
   ];
 
   valid.forEach(msg => {
-    t.equal(isValidTitle(msg), true, `"${msg}", was expected to be valid`);
+    t.equal(validateTitle(msg).length, 0, `"${msg}", was expected to be valid`);
   });
 });
 
@@ -65,6 +65,6 @@ test('invalid commits fail', () => {
   ];
 
   invalid.forEach(msg => {
-    t.equal(isValidTitle(msg), false);
+    t.notEqual(validateTitle(msg).length, 0);
   });
 });
