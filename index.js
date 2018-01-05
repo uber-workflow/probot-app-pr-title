@@ -37,6 +37,6 @@ function setStatus(context, errors) {
       ...status,
       sha: context.payload.pull_request.head.sha,
       context: 'probot/pr-title',
-    })
+    }),
   );
 }

@@ -13,7 +13,6 @@ module.exports = function validateTitle(text) {
 
 // Validate text is a single sentence with no end punctuation
 function validateSentence(parsed) {
-  const errors = [];
   const sentences = parsed.sentences();
   return [
     !isSingleSentence(sentences) ? 'Must be one and only one sentence.' : null,
