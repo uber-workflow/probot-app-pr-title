@@ -6,27 +6,28 @@
 
 const nlp = require('compromise');
 
-module.exports = function isValidTitle(text) {
+module.exports = function validateTitle(text) {
   const parsed = nlp(text);
-  return isValidSentence(parsed) && firstTermIsValidVerb(parsed);
+  return [...validateSentence(parsed), ...validateFirstTerm(parsed)];
 };
 
 // Validate text is a single sentence with no end punctuation
-function isValidSentence(parsed) {
+function validateSentence(parsed) {
   const sentences = parsed.sentences();
-  // must be one and only one sentence
-  if (sentences.length !== 1) {
-    return false;
-  }
-  // must be at least two words long
-  if (parsed.terms().length < 2) {
-    return false;
-  }
-  // must not have any end punctuation
-  if (sentences.list[0].endPunctuation() !== null) {
-    return false;
-  }
-  return true;
+  return [
+    !isSingleSentence(sentences) ? 'Must be one and only one sentence.' : null,
+    !isNotTooShort(parsed) ? 'Must be at least two words long.' : null,
+    !isNotPunctuated(sentences) ? 'Must not have any end punctuation.' : null,
+  ].filter(Boolean);
+}
+
+// Validate first word is a capitalized imperative mood verb
+function validateFirstTerm(parsed) {
+  const term = parsed.terms().data()[0];
+  return [
+    !isValidVerb(term) ? 'First word must be imperative verb.' : null,
+    !isCapitalized(term) ? 'First word must be capitalized.' : null,
+  ].filter(Boolean);
 }
 
 // The following verbs starting with `re` are categorized as singular nouns
@@ -47,10 +48,16 @@ const nounWhitelist = new Set([
   'upgrade',
 ]);
 
-// Validate first word is a capitalized imperative mood verb
-function firstTermIsValidVerb(parsed) {
-  const term = parsed.terms().data()[0];
-  return isValidVerb(term) && isCapitalized(term);
+function isSingleSentence(sentences) {
+  return sentences.length === 1;
+}
+
+function isNotTooShort(parsed) {
+  return parsed.terms().length >= 2;
+}
+
+function isNotPunctuated(sentences) {
+  return sentences.list[0].endPunctuation() === null;
 }
 
 function isValidVerb(term) {
