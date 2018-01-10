@@ -39,6 +39,8 @@ test('valid commits pass', () => {
     'Restructure some arbitrary thing',
     'Resolve some arbitrary thing',
     'Upgrade some arbitrary thing',
+    'Pin Dockerfile node:8.9.0 image digest',
+    'Configure Renovate',
   ];
 
   valid.forEach(msg => {

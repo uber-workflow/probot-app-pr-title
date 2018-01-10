@@ -33,18 +33,20 @@ function validateFirstTerm(parsed) {
 // The following verbs starting with `re` are categorized as singular nouns
 // See: https://github.com/nlp-compromise/compromise/issues/412
 const nounWhitelist = new Set([
+  'configure',
+  'expose',
   'implement',
   'introduce',
-  'repeat',
+  'pin',
   'rebuild',
   'reconcile',
   'record',
-  'redefine',
   'recover',
+  'redefine',
+  'repeat',
   'reset',
-  'restructure',
   'resolve',
-  'expose',
+  'restructure',
   'upgrade',
 ]);
 
