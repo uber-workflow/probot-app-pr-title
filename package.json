@@ -13,15 +13,15 @@
     "fix": "eslint . --fix"
   },
   "dependencies": {
-    "compromise": "^11.1.0",
-    "probot": "^3.0.0"
+    "compromise": "11.2.2",
+    "probot": "3.0.3"
   },
   "devDependencies": {
-    "eslint": "^4.8.0",
-    "eslint-plugin-prettier": "^2.3.1",
-    "jest": "^21.2.1",
-    "localtunnel": "^1.8.3",
-    "prettier": "^1.7.4"
+    "eslint": "4.15.0",
+    "eslint-plugin-prettier": "2.4.0",
+    "jest": "21.2.1",
+    "localtunnel": "1.8.3",
+    "prettier": "1.10.2"
   },
   "engines": {
     "node": ">= 8.6.0"
