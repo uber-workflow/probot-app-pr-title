@@ -64,6 +64,7 @@ test('invalid commits fail', () => {
     'Add cool thing. Add another thing',
     `potato doesn't work`,
     'revert whatever',
+    'Implement some arbitrary thing with a period.',
   ];
 
   invalid.forEach(msg => {
