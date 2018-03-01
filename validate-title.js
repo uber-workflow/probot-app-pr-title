@@ -43,7 +43,8 @@ function isNotTooShort(parsed) {
 }
 
 function isNotPunctuated(sentences) {
-  return sentences.list[0].endPunctuation() === null;
+  const endPunctuation = sentences.list[0].endPunctuation();
+  return endPunctuation === null || endPunctuation === '';
 }
 
 function isValidVerb(term) {
