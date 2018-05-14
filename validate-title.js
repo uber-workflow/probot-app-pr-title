@@ -37,6 +37,7 @@ const nounWhitelist = new Set([
   'enforce',
   'implement',
   'pin',
+  'rename',
   'reset',
   'set',
 ]);
