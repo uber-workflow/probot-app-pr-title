@@ -35,6 +35,7 @@ test('valid commits pass', () => {
     'Record some arbitrary thing',
     'Redefine some arbitrary thing',
     'Recover some arbitrary thing',
+    'Rename some arbitrary thing',
     'Reset some arbitrary thing',
     'Restructure some arbitrary thing',
     'Resolve some arbitrary thing',
