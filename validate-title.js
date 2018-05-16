@@ -34,6 +34,7 @@ function validateFirstTerm(parsed) {
 // See: https://github.com/nlp-compromise/compromise/issues/448
 const nounWhitelist = new Set([
   'configure',
+  'disable',
   'enforce',
   'implement',
   'pin',
