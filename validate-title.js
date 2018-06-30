@@ -30,17 +30,19 @@ function validateFirstTerm(parsed) {
   ].filter(Boolean);
 }
 
-// The following verbs starting with `re` are categorized as singular nouns
+// The following imperative verbs are not categorized as such
 // See: https://github.com/nlp-compromise/compromise/issues/448
 const nounWhitelist = new Set([
   'configure',
   'disable',
   'enforce',
   'implement',
+  'log',
   'pin',
   'rename',
   'reset',
   'set',
+  'track',
 ]);
 
 function isSingleSentence(sentences) {
