@@ -45,6 +45,9 @@ test('valid commits pass', () => {
     'Enforce some arbitrary thing',
     'Set some arbitrary thing',
     'Disable some arbitrary thing',
+    'Log some arbitrary thing',
+    'Track some arbitrary thing',
+    'Run some arbitrary thing',
   ];
 
   valid.forEach(msg => {

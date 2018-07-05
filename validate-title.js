@@ -43,6 +43,7 @@ const nounWhitelist = new Set([
   'reset',
   'set',
   'track',
+  'run',
 ]);
 
 function isSingleSentence(sentences) {
