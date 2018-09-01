@@ -13,7 +13,7 @@
     "fix": "eslint . --fix"
   },
   "dependencies": {
-    "compromise": "11.5.3",
+    "compromise": "11.12.0",
     "probot": "5.0.1"
   },
   "devDependencies": {
