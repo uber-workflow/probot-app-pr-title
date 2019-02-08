@@ -42,6 +42,7 @@ const nounWhitelist = new Set([
   'rename',
   'reset',
   'set',
+  'skip',
   'track',
   'run',
   'clean',
