@@ -48,7 +48,7 @@ const nounWhitelist = new Set([
   'clean',
   'restore',
   'preserve',
-  'omit'
+  'omit',
 ]);
 
 function isSingleSentence(sentences) {
