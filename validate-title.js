@@ -43,6 +43,7 @@ const nounWhitelist = new Set([
   'reset',
   'set',
   'skip',
+  'sync',
   'track',
   'run',
   'clean',
