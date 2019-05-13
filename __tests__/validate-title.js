@@ -51,6 +51,7 @@ test('valid commits pass', () => {
     'Clean up some arbitrary thing',
     'Restore some arbitrary thing',
     'Preserve some arbitrary thing',
+    'Sync pr from other repo',
   ];
 
   valid.forEach(msg => {
