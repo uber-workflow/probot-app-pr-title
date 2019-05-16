@@ -51,6 +51,7 @@ const nounWhitelist = new Set([
   'preserve',
   'omit',
   'instrument',
+  'throw',
 ]);
 
 function isSingleSentence(sentences) {
