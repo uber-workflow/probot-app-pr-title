@@ -52,6 +52,8 @@ test('valid commits pass', () => {
     'Restore some arbitrary thing',
     'Preserve some arbitrary thing',
     'Sync pr from other repo',
+    '[package-name] Fix bug',
+    '[sync] Copy some feature over',
   ];
 
   valid.forEach(msg => {
