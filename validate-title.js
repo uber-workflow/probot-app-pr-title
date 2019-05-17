@@ -9,7 +9,7 @@ const nlp = require('compromise');
 module.exports = function validateTitle(text) {
   // strip identifying tags
   // e.g. [package-name] Fix bug
-  text = text.replace(/^(?:\[[^\]]*\] ?)*/, '');
+  text = text.replace(/^(\[[^\]]*\] ?)*/, '');
 
   const parsed = nlp(text);
   return [...validateSentence(parsed), ...validateFirstTerm(parsed)];
