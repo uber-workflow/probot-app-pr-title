@@ -52,6 +52,7 @@ const nounWhitelist = new Set([
   'omit',
   'instrument',
   'throw',
+  'emit',
 ]);
 
 function isSingleSentence(sentences) {
