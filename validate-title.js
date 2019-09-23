@@ -54,6 +54,7 @@ const nounWhitelist = new Set([
   'throw',
   'emit',
   'audit',
+  'wrap',
 ]);
 
 function isSingleSentence(sentences) {
