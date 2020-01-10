@@ -54,6 +54,7 @@ test('valid commits pass', () => {
     'Sync pr from other repo',
     'Emit stats from the browser',
     'Wrap flaky check in try/catch',
+    'Exclude merge commits in co-author collection',
   ];
 
   valid.forEach(msg => {
