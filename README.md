@@ -1,3 +1,5 @@
+Test.
+
 # probot-app-pr-title
 
 [![build status][build-badge]][build-href]
@@ -10,7 +12,7 @@
 
 The purpose of this bot is to reject PRs with titles that do not conform to format described in https://chris.beams.io/posts/git-commit/
 
-In summary, a PR should be titled such that the sentence "If applied, this commit will $PR_TITLE" makes sense.
+In summary, a PR should be titled such that the sentence "If applied, this commit will \$PR_TITLE" makes sense.
 
 ## Setup
 
