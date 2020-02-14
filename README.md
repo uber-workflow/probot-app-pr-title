@@ -1,3 +1,5 @@
+.
+
 # probot-app-pr-title
 
 [![build status][build-badge]][build-href]
