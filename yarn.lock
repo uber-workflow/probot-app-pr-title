@@ -749,11 +749,12 @@ commander@^2.19.0, commander@~2.20.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
 
-compromise@11.5.3:
-  version "11.5.3"
-  resolved "https://registry.yarnpkg.com/compromise/-/compromise-11.5.3.tgz#127c53a130e2676d6519d50ac758091bb5c64c86"
+compromise@13.11.4:
+  version "13.11.4"
+  resolved "https://registry.yarnpkg.com/compromise/-/compromise-13.11.4.tgz#3136e6d2c2cca822ba7cebd140c9f27f405b67f1"
+  integrity sha512-nBITcNdqIHSVDDluaG6guyFFCSNXN+Hu87fU8VlhkE5Z0PwTZN1nro2O7a8JcUH88nB5EOzrxd9zKfXLSNFqcg==
   dependencies:
-    efrt-unpack "2.0.3"
+    efrt-unpack "2.2.0"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -1016,9 +1017,10 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-efrt-unpack@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/efrt-unpack/-/efrt-unpack-2.0.3.tgz#6ada57793e3dda16d182f6a371fbe3d135af9dc2"
+efrt-unpack@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/efrt-unpack/-/efrt-unpack-2.2.0.tgz#b05dbec0fb8cb346a27840e00c969df9c72fee52"
+  integrity sha512-9xUSSj7qcUxz+0r4X3+bwUNttEfGfK5AH+LVa1aTpqdAfrN5VhROYCfcF+up4hp5OL7IUKcZJJrzAGipQRDoiQ==
 
 encodeurl@~1.0.1:
   version "1.0.2"
